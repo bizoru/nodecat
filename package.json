@@ -1,0 +1,23 @@
+{
+  "name": "node-experiments",
+  "version": "1.0.0",
+  "description": "An url based app to show cat images",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizoru/nodecat.git"
+  },
+  "author": "my daughter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizoru/nodecat/issues"
+  },
+  "homepage": "https://github.com/bizoru/nodecat#readme"
+}
