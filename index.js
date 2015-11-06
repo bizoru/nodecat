@@ -21,6 +21,10 @@ var gato_pirata = "http://www.eluniversal.com.co/sites/default/files/201510/gato
 var murcielago = "http://a2.assets.nationalgeographic.es/soc_photo/2328.600x450.jpg";
 var rata = "http://k30.kn3.net/taringa/D/9/2/0/1/3/franxXY/473.gif";
 var tigre = "http://imagenes-tiernas.net/wp-content/uploads/2012/11/tigres-bebe-e1352479669841.jpg";
+var gato_calvo = "http://4.bp.blogspot.com/-s-xd6UzbceA/U_tk62nwxkI/AAAAAAAACVY/CsgNVn-qL-A/s1600/sphynx-cat-playing-7-of-the-most-affectionate-cat-breeds-pets4homes.jpg";
+var gato_llorando = "http://songoflove.net/resources/aaa.jpg";
+var gato_volador = "http://s3.hulkshare.com/song_images/original/a/9/a/a9a33f0a8bacc4c01db66c1ddf0cd754.jpg?dd=-62169985172";
+
 
 
 
@@ -180,6 +184,29 @@ var server = http.createServer(function(req,res){
 
   }
 
+  if(requestobj.pathname == "/gato/calvo" || requestobj.pathname == "/gatito/calvo"){
+
+
+    res.write(imagen(gato_calvo));
+
+  }
+
+  if(requestobj.pathname == "/gato/llorando" || requestobj.pathname == "/gatito/llorando"){
+
+
+    res.write(imagen(gato_llorando));
+
+  }
+
+
+  if(requestobj.pathname == "/gato/volador" || requestobj.pathname == "/gatito/volador"){
+
+
+      res.write(imagen(gato_volador));
+
+  }
+
+
   if(requestobj.pathname == "/"){
 
     res.write("<h1 style='font-family: sans;'> Bienvenido a el mundo Animal!</h1>");
@@ -191,4 +218,4 @@ var server = http.createServer(function(req,res){
 
 
 });
-server.listen(5000,'10.130.191.60');
+server.listen(5000,'127.0.0.1');
